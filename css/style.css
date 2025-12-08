@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html{
+    height: 100%;
+    padding: 10px;
+}
+body{
+    height: 100%;
+}
+/*Menu general*/
+.dropdown-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 10%;
+}
+.btn-menu{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+}
+.btn-menu:hover{
+    border-radius: 20px;
+    background-color: skyblue;
+}
