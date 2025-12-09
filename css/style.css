@@ -1,30 +1,142 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
-html{
+
+html {
     height: 100%;
     padding: 10px;
 }
-body{
+
+body {
     height: 100%;
+    background-color: #0a0e27;
+    color: white;
 }
-/*Menu general*/
-.dropdown-menu{
+
+.visible {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+/*Menu desplegable*/
+.dropdown-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 10%;
+    min-height: 10%;
+    color: white;
 }
-.btn-menu{
+
+.dropdown-menu .logo {
     width: 10%;
-    height: 100%;
+}
+
+.btn-menu {
+    height: 80px;
     text-align: center;
     align-content: center;
 }
-.btn-menu:hover{
+
+.btn-menu:not(.logo) {
+    flex: 1 1 10%;
+}
+
+.btn-menu:hover:not(.logo) {
     border-radius: 20px;
-    background-color: skyblue;
+    background-color: #00BCD4;
+    color: white;
+    opacity: 0.9;
+}
+
+/*Ahora vamos con la parte principal*/
+.main {
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 90%;
+}
+
+/*=================================================================
+Vamos con el inicio
+====================================================================*/
+#principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    /*Ocultamos la barra del scroll*/
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+/*Ocultamos la barra de scroll*/
+#principal::-webkit-scrollbar {
+    display: none;
+}
+
+.sub-principal {
+    background-color: #00BCD4;
+    margin-top: 20px;
+    min-height:60%;
+    width: 90%;
+    color: #000;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px 0px black;
+    text-align: center;
+    align-content: center;
+}
+.sub-data-me{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid #00BCD4;
+    width: 90%;
+    border-radius: 20px;
+}
+.sub-data-me .btn-me{
+    margin: 20px;
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #4ECDC4;
+}
+.sub-data-me .btn-me-two{
+    margin: 20px;
+    align-content: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #4ECDC4;
+}
+.btn-me-two:hover{
+    background-color: #4ECDC4;
+    color: black;
+}
+/*================================================================
+SOBRE MI
+==================================================================*/
+
+/*================================================================
+ Aca va la parte del footer
+==================================================================*/
+.footer {
+    margin: auto;
+    min-height: 15%;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    background-color: #00BCD4;
+    opacity: 0.9;
+    width: 95%;
 }
